@@ -14,6 +14,10 @@
 		6C69208A247EE35A0044E5F3 /* QuantumITProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C692088247EE35A0044E5F3 /* QuantumITProject.xcdatamodeld */; };
 		6C69208C247EE35C0044E5F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C69208B247EE35C0044E5F3 /* Assets.xcassets */; };
 		6C69208F247EE35C0044E5F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C69208D247EE35C0044E5F3 /* LaunchScreen.storyboard */; };
+		6C692099247EE8970044E5F3 /* AdvisorListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C692097247EE8970044E5F3 /* AdvisorListController.swift */; };
+		6C69209A247EE8970044E5F3 /* AdvisorListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C692098247EE8970044E5F3 /* AdvisorListController.xib */; };
+		6C69209E247EED1A0044E5F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C69209C247EED1A0044E5F3 /* ViewController.swift */; };
+		6C69209F247EED1A0044E5F3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C69209D247EED1A0044E5F3 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		6C69208B247EE35C0044E5F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C69208E247EE35C0044E5F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C692090247EE35C0044E5F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C692097247EE8970044E5F3 /* AdvisorListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorListController.swift; sourceTree = "<group>"; };
+		6C692098247EE8970044E5F3 /* AdvisorListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvisorListController.xib; sourceTree = "<group>"; };
+		6C69209C247EED1A0044E5F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C69209D247EED1A0044E5F3 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		6C69207E247EE35A0044E5F3 /* QuantumITProject */ = {
 			isa = PBXGroup;
 			children = (
+				6C69209B247EECC80044E5F3 /* Task2 */,
+				6C692096247EE7F70044E5F3 /* Task1 */,
 				6C69207F247EE35A0044E5F3 /* AppDelegate.swift */,
 				6C692081247EE35A0044E5F3 /* SceneDelegate.swift */,
 				6C692083247EE35A0044E5F3 /* ViewController.swift */,
@@ -68,6 +78,24 @@
 				6C692088247EE35A0044E5F3 /* QuantumITProject.xcdatamodeld */,
 			);
 			path = QuantumITProject;
+			sourceTree = "<group>";
+		};
+		6C692096247EE7F70044E5F3 /* Task1 */ = {
+			isa = PBXGroup;
+			children = (
+				6C692097247EE8970044E5F3 /* AdvisorListController.swift */,
+				6C692098247EE8970044E5F3 /* AdvisorListController.xib */,
+			);
+			path = Task1;
+			sourceTree = "<group>";
+		};
+		6C69209B247EECC80044E5F3 /* Task2 */ = {
+			isa = PBXGroup;
+			children = (
+				6C69209C247EED1A0044E5F3 /* ViewController.swift */,
+				6C69209D247EED1A0044E5F3 /* ViewController.xib */,
+			);
+			path = Task2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +156,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C69209F247EED1A0044E5F3 /* ViewController.xib in Resources */,
 				6C69208F247EE35C0044E5F3 /* LaunchScreen.storyboard in Resources */,
 				6C69208C247EE35C0044E5F3 /* Assets.xcassets in Resources */,
+				6C69209A247EE8970044E5F3 /* AdvisorListController.xib in Resources */,
 				6C692087247EE35A0044E5F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C69209E247EED1A0044E5F3 /* ViewController.swift in Sources */,
 				6C69208A247EE35A0044E5F3 /* QuantumITProject.xcdatamodeld in Sources */,
 				6C692084247EE35A0044E5F3 /* ViewController.swift in Sources */,
 				6C692080247EE35A0044E5F3 /* AppDelegate.swift in Sources */,
 				6C692082247EE35A0044E5F3 /* SceneDelegate.swift in Sources */,
+				6C692099247EE8970044E5F3 /* AdvisorListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
