@@ -19,13 +19,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func actionMovetoTask1(_ sender: Any) {
-        
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        //let task1Tab = AdvisorListController(nibName: "AdvisorListController", bundle: nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "newView") as! AdvisorListController
-        self.navigationController?.pushViewController(nextViewController, animated: true)
-       
-        //storyBoard.instantiateViewController.pushViewController(task1Tab, animated: true)
+        let task1Tab = AdvisorListController(nibName: "AdvisorListController", bundle: nil)
+        self.present(task1Tab, animated: true, completion: {
+        })
     }
     @IBAction func actionMovetoTask2(_ sender: Any) {
     }

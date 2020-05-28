@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C67D0E524803C7D0042B955 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67D0E324803C7D0042B955 /* ProfileTableViewCell.swift */; };
+		6C67D0E624803C7D0042B955 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C67D0E424803C7D0042B955 /* ProfileTableViewCell.xib */; };
 		6C692080247EE35A0044E5F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C69207F247EE35A0044E5F3 /* AppDelegate.swift */; };
 		6C692082247EE35A0044E5F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C692081247EE35A0044E5F3 /* SceneDelegate.swift */; };
 		6C692084247EE35A0044E5F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C692083247EE35A0044E5F3 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C67D0E324803C7D0042B955 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		6C67D0E424803C7D0042B955 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		6C69207C247EE35A0044E5F3 /* QuantumITProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantumITProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C69207F247EE35A0044E5F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C692081247EE35A0044E5F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C67D0E224803C050042B955 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C67D0E324803C7D0042B955 /* ProfileTableViewCell.swift */,
+				6C67D0E424803C7D0042B955 /* ProfileTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6C692073247EE3590044E5F3 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +75,7 @@
 		6C69207E247EE35A0044E5F3 /* QuantumITProject */ = {
 			isa = PBXGroup;
 			children = (
+				6C67D0E224803C050042B955 /* View */,
 				6C69209B247EECC80044E5F3 /* Task2 */,
 				6C692096247EE7F70044E5F3 /* Task1 */,
 				6C69207F247EE35A0044E5F3 /* AppDelegate.swift */,
@@ -154,6 +168,7 @@
 				6C69208C247EE35C0044E5F3 /* Assets.xcassets in Resources */,
 				6C69209A247EE8970044E5F3 /* AdvisorListController.xib in Resources */,
 				6C692087247EE35A0044E5F3 /* Main.storyboard in Resources */,
+				6C67D0E624803C7D0042B955 /* ProfileTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +182,7 @@
 				6C69208A247EE35A0044E5F3 /* QuantumITProject.xcdatamodeld in Sources */,
 				6C692084247EE35A0044E5F3 /* ViewController.swift in Sources */,
 				6C692080247EE35A0044E5F3 /* AppDelegate.swift in Sources */,
+				6C67D0E524803C7D0042B955 /* ProfileTableViewCell.swift in Sources */,
 				6C692082247EE35A0044E5F3 /* SceneDelegate.swift in Sources */,
 				6C692099247EE8970044E5F3 /* AdvisorListController.swift in Sources */,
 			);
