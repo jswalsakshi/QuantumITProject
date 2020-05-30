@@ -1,0 +1,6 @@
+framework module Pods_QuantumITProject {
+  umbrella header "Pods-QuantumITProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

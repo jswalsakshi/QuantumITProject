@@ -24,6 +24,9 @@ class ViewController: UIViewController {
         })
     }
     @IBAction func actionMovetoTask2(_ sender: Any) {
+        let task2Tab = ChartViewController(nibName: "ChartViewController", bundle: nil)
+        self.present(task2Tab, animated: true, completion: {
+        })
     }
     
     @IBAction func actionMovetoTask3(_ sender: Any) {

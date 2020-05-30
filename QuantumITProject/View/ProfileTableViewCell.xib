@@ -192,7 +192,15 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="50.724637681159422" y="22.767857142857142"/>
+            <connections>
+                <outlet property="lbl_bio" destination="t5D-1F-CtS" id="dat-T5-xev"/>
+                <outlet property="lbl_email" destination="JdU-bZ-zPF" id="36z-aI-uv1"/>
+                <outlet property="lbl_experience" destination="xHm-L3-1Ld" id="P8o-UZ-2Yo"/>
+                <outlet property="lbl_name" destination="esw-bx-izt" id="uTA-cf-def"/>
+                <outlet property="lbl_number" destination="SfL-ls-VO3" id="y3w-Y2-W5R"/>
+                <outlet property="lbl_qualification" destination="6AE-HG-33u" id="8Wo-iv-EeQ"/>
+            </connections>
+            <point key="canvasLocation" x="-112" y="24"/>
         </tableViewCell>
     </objects>
 </document>
