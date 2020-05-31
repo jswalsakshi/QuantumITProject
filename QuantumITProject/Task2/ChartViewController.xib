@@ -39,24 +39,24 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xm5-Gq-IGq" customClass="HIChartView">
-                            <rect key="frame" x="40" y="200" width="334" height="250"/>
+                            <rect key="frame" x="0.0" y="323" width="414" height="250"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="250" id="2hQ-XX-8uT"/>
+                                <constraint firstAttribute="width" constant="414" id="iwq-mB-T1X"/>
+                                <constraint firstAttribute="height" constant="250" id="tYE-Bl-Or8"/>
                             </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstItem="5SN-NW-lhO" firstAttribute="top" secondItem="Tkm-yO-efi" secondAttribute="top" constant="20" id="Dsb-BG-hUy"/>
-                        <constraint firstItem="Xm5-Gq-IGq" firstAttribute="top" secondItem="Tkm-yO-efi" secondAttribute="top" constant="200" id="IYl-ht-qG9"/>
-                        <constraint firstAttribute="trailing" secondItem="Xm5-Gq-IGq" secondAttribute="trailing" constant="40" id="MjG-W0-SZs"/>
+                        <constraint firstItem="Xm5-Gq-IGq" firstAttribute="leading" secondItem="Tkm-yO-efi" secondAttribute="leading" id="QkP-Qe-R4y"/>
+                        <constraint firstItem="Xm5-Gq-IGq" firstAttribute="centerY" secondItem="Tkm-yO-efi" secondAttribute="centerY" id="ar7-BK-igK"/>
+                        <constraint firstItem="Xm5-Gq-IGq" firstAttribute="centerX" secondItem="Tkm-yO-efi" secondAttribute="centerX" id="bVx-Jt-bm3"/>
                         <constraint firstItem="5SN-NW-lhO" firstAttribute="centerY" secondItem="FBK-LY-fc7" secondAttribute="centerY" id="nuU-S9-IeT"/>
                         <constraint firstAttribute="trailing" secondItem="FBK-LY-fc7" secondAttribute="trailing" constant="20" id="nzS-x7-fbO"/>
                         <constraint firstItem="FBK-LY-fc7" firstAttribute="top" secondItem="Tkm-yO-efi" secondAttribute="top" constant="20" id="q4n-B9-gDf"/>
                         <constraint firstItem="5SN-NW-lhO" firstAttribute="centerX" secondItem="Tkm-yO-efi" secondAttribute="centerX" id="rEY-9M-z73"/>
-                        <constraint firstItem="Xm5-Gq-IGq" firstAttribute="leading" secondItem="Tkm-yO-efi" secondAttribute="leading" constant="40" id="wnZ-XO-QaN"/>
-                        <constraint firstItem="Xm5-Gq-IGq" firstAttribute="centerX" secondItem="Tkm-yO-efi" secondAttribute="centerX" id="yVF-OL-M8w"/>
                     </constraints>
                 </view>
             </subviews>

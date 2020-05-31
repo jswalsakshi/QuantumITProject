@@ -15,15 +15,68 @@ class ChartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // self.setUpChartUI()
+        self.setUpChartUI()
     }
     
     func setUpChartUI() {
-        let chartView = HIChartView(frame: CGRect(x: 5.0, y: 5.0, width: self.view.bounds.size.width/2, height: self.view.bounds.size.height/2))
-        chartView.backgroundColor = .black
+//        let frame = CGRect(x: 0, y: 0, width: self.chartView.frame.width , height: self.chartView.frame.height )
+        let chartView = HIChartView(frame: view.bounds)
+        chartView.sizeToFit()
         
+        let options = HIOptions()
+        
+        let chart = HIChart()
+        //chart.plotBackgroundColor = HIColor()
+        //chart.borderColor = UIColor.clear
+        //chart.plotBorderWidth = (value: 0)
+      //  chart.plotShadow = NSNumber(value: false)
+        
+        let title = HITitle()
+        title.text = "Aggresive*"
+        title.align = "center"
+        title.verticalAlign = "middle"
+        title.y =  80
+        
+        let tooltip = HITooltip()
+        tooltip.pointFormat = "{point.percentage:.1f}%"
+        
+        let plotoptions = HIPlotOptions()
+        plotoptions.pie = HIPie()
+//        plotoptions.pie.dataLabels = HIDataLabels()
+//        plotoptions.pie.dataLabels.enabled = NSNumber(value: true)
+//        plotoptions.pie.dataLabels.style.color = "white"
+//        plotoptions.pie.dataLabels.style.fontWeight() = "bold"
+//        plotoptions.pie.dataLabels.style.textOutline = "0px 1px 2px black"
+        plotoptions.pie.startAngle =  -90
+        plotoptions.pie.endAngle =  90
+        plotoptions.pie.center = ["50%", "75%"]
+        plotoptions.pie.size = 300
+        
+        let pie = HIPie()
+        //let data = HIData()
+       // data.name = "Proprietary or Undetectable"
+       // data.y =  0.2
+//        data.dataLabels = [
+//            "enabled": NSNumber(value: false)
+//        ]
+       // pie.name = "Browser share"
+        pie.innerSize = "50%"
+        pie.data = [
+            ["Risk Assesment", 65.0],
+            ["Risk Assesment", 35.0]
+        ]
+        
+        options.chart = chart
+        options.title = title
+        options.tooltip = tooltip
+        options.plotOptions = plotoptions
+        options.series = [pie]
+        
+        chartView.options = options
+        chartView.frame = self.chartView.bounds
         self.chartView.addSubview(chartView)
-    }
+        }
+    
     
     @IBAction func actionCloseView(_ sender: Any) {
         self.dismiss(animated: true) {
@@ -32,8 +85,6 @@ class ChartViewController: UIViewController {
     }
 }
 
-//import Highcharts
-//import UIKit
 //
 //class ViewController {
 //    func viewDidLoad() {
@@ -72,9 +123,9 @@ class ChartViewController: UIViewController {
 //var data = HIData()
 //data.name = "Proprietary or Undetectable"
 //data.y = NSNumber(value: 0.2)
-////data.dataLabels = [
-////"enabled": NSNumber(value: false)
-////]
+//data.dataLabels = [
+//"enabled": NSNumber(value: false)
+//]
 //pie.name = "Browser share"
 //pie.innerSize = "50%"
 //pie.data = [
