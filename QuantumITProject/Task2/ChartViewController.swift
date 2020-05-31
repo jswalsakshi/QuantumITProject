@@ -83,6 +83,12 @@ class ChartViewController: UIViewController {
             
         }
     }
+    
+    @IBAction func actionBackButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true) {
+            
+        }
+    }
 }
 
 //
