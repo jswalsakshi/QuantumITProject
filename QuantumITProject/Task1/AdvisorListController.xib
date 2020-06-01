@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -55,23 +56,23 @@
                         <constraint firstAttribute="height" constant="1" id="4Im-e8-iQr"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="At4-Bp-RJE">
-                    <rect key="frame" x="0.0" y="61" width="414" height="835"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="At4-Bp-RJE">
+                    <rect key="frame" x="10" y="71" width="394" height="815"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="At4-Bp-RJE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0oF-ry-vta"/>
+                <constraint firstItem="At4-Bp-RJE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="0oF-ry-vta"/>
                 <constraint firstItem="Qzh-vg-lPQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="19z-Cp-heh"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="At4-Bp-RJE" secondAttribute="trailing" id="3Ph-4g-Goq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="At4-Bp-RJE" secondAttribute="trailing" constant="10" id="3Ph-4g-Goq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pBz-gh-4o5" secondAttribute="trailing" id="9Ae-LT-rBr"/>
                 <constraint firstItem="pBz-gh-4o5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Tgi-vt-YSV"/>
-                <constraint firstItem="At4-Bp-RJE" firstAttribute="top" secondItem="Qzh-vg-lPQ" secondAttribute="bottom" id="U6O-o5-omB"/>
+                <constraint firstItem="At4-Bp-RJE" firstAttribute="top" secondItem="Qzh-vg-lPQ" secondAttribute="bottom" constant="10" id="U6O-o5-omB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qzh-vg-lPQ" secondAttribute="trailing" id="dEI-7h-cA7"/>
                 <constraint firstItem="Qzh-vg-lPQ" firstAttribute="top" secondItem="pBz-gh-4o5" secondAttribute="bottom" id="fY8-ta-BGd"/>
                 <constraint firstItem="pBz-gh-4o5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kZQ-Ub-nH5"/>
-                <constraint firstAttribute="bottom" secondItem="At4-Bp-RJE" secondAttribute="bottom" id="taO-5R-hMl"/>
+                <constraint firstAttribute="bottom" secondItem="At4-Bp-RJE" secondAttribute="bottom" constant="10" id="taO-5R-hMl"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

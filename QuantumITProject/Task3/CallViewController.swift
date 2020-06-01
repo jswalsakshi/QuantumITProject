@@ -34,7 +34,6 @@ extension CallKitMethodHandler: CXProviderDelegate {
         let endCallTab = EndCallViewController(nibName: "EndCallViewController", bundle: nil)
         self.present(endCallTab, animated: true, completion: {
         })
-        //action.fulfill()
     }
     func provider(_ provider: CXProvider, perform action: CXEndCallAction) {
         action.fulfill()

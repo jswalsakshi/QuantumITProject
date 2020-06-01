@@ -9,7 +9,10 @@
 import UIKit
 
 class ProfileTableViewCell: UITableViewCell {
-
+    
+    var listData: ListData?
+    
+    @IBOutlet weak var view_container: UIView!
     @IBOutlet weak var lbl_name: UILabel!
     @IBOutlet weak var lbl_qualification: UILabel!
     @IBOutlet weak var lbl_experience: UILabel!
@@ -19,7 +22,20 @@ class ProfileTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+    }
+    
+    func configCell(data: ListData){
+        self.listData = data
+        self.setUpUI(data: data)
+    }
+    
+    private func setUpUI(data: ListData) {
+        self.lbl_name.text = data.Name
+        self.lbl_qualification.text = data.Qualification
+        self.lbl_experience.text = data.experience
+        self.lbl_bio.text = data.Bio
+        self.lbl_number.text = data.phone
+        self.lbl_email.text = data.email
     }
     
 }
